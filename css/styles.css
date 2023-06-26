@@ -960,6 +960,8 @@ address {
 }
 .all-main{
     width: 100%;
+    max-width: 396px;
+
 }
 .content-list {
     display: flex;
