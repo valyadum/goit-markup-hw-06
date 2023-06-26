@@ -967,12 +967,9 @@ address {
     justify-content: center;
     row-gap: 48px;
 }
-
 .part-content {
     width: 100%;
-
 }
-
 .exempl {
     font-weight: 500;
     font-size: 20px;
