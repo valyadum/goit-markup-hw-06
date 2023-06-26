@@ -22,7 +22,8 @@
         <div class="container header-container">
             <nav class="nav">
                 <a href="./index.html" class="logo link">Web<span class="part-logo">Studio</span></a>
-                <ul class="page-nav list">
+                
+                 <ul class="page-nav list">
                     <li class="title-nav">
                         <a class="link current" href="./index.html">Studio</a>
                     </li>
@@ -32,7 +33,7 @@
                     <li class="title-nav">
                         <a class="link" href="">Contacts</a>
                     </li>
-                </ul>
+                </ul> 
             </nav>
             <address class="address">
                 <ul class="address-link list">
@@ -43,12 +44,79 @@
                         <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
-            </address>
+            </address> 
+                <button class="icon-menu" data-menu-open>
+                    <svg class="icon-menu-hamburger" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="button-close-mob" data-menu-close>
+                <svg class="icon-mode" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div>
+            <ul class="page-nav-mob list">
+                <li class="title-nav-mob">
+                    <a class="link mob-link current" href="./index.html">Studio</a>
+                </li>
+                <li class="title-nav-mob">
+                    <a class="link mob-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="title-nav-mob">
+                    <a class="link mob-link" href="">Contacts</a>
+                </li>
+            </ul> 
+        </div>
+            <div class="mob-container">
+            <address class="address-mob">
+                <ul class="address-link-mob list-mob">
+                    <li class="mob-phone">
+                        <a class="link link-mob-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li>
+                        <a class="link link-mob-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address> 
+            <ul class="mob-social-icon">
+                <li class="mob-social-icon-link">
+                    <a href="#" class="social-icon">
+                        <svg class="soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-social-icon-link">
+                    <a href="#" class="social-icon">
+                        <svg class="soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-social-icon-link">
+                    <a href="#" class="social-icon">
+                        <svg class="soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-social-icon-link">
+                    <a href="#" class="social-icon">
+                        <svg class="soc-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div> 
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container container-hero">
+            <div class="container container-hero container-hero-phone">
                 <h1 class="title-hero">
                     Effective Solutions
                     for Your Business
@@ -57,11 +125,11 @@
             </div>
         </section>
         <section class="our-advantages">
-            <div class="container container-advantages">
+            <div class="container container-advantages container-advantages-phone">
                 <h2 hidden class="title visually-hidden">Features</h2>
                 <ul class="list list-advantages">
                     <li class="advantages">
-                        <div class="icon-adv">
+                        <div class="icon-adv ">
                             <svg class="advantages-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
@@ -71,7 +139,7 @@
                             problem to walk away with the perfect and creative solution. </p>
                     </li>
                     <li class="advantages">
-                        <div class="icon-adv">
+                        <div class="icon-adv ">
                             <svg class="advantages-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
@@ -84,7 +152,7 @@
                         </p>
                     </li>
                     <li class="advantages">
-                        <div class="icon-adv">
+                        <div class="icon-adv ">
                             <svg class="advantages-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
@@ -124,11 +192,12 @@
             </div>
         </section>
         <section class="our-team">
-            <div class="container team-container">
+            <div class="container team-container team-container-phone">
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="list team">
                     <li class="photo-team">
-                        <img src="./images/img.jpg" alt="photo of Mark Guerrero" width="264" height="260">
+                        <img srcset="./images/img-2x.jpeg 2x, ./images/img.jpg 1x"  
+                        src="./images/img.jpg" alt="photo of Mark Guerrero" width="264" height="260">
                         <div class="team-text">
                             <h3 class="title-h">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
@@ -165,7 +234,8 @@
                         </div>
                     </li>
                     <li class="photo-team">
-                        <img src="./images/img_12.jpg" alt="photo of Tom Ford" width="264" height="260">
+                        <img srcset="./images/img_12-2x.jpeg 2x, ./images/img_12.jpg 1x" 
+                        src="./images/img_12.jpg" alt="photo of Tom Ford" width="264" height="260">
                         <div class="team-text">
                             <h3 class="title-h">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
@@ -202,7 +272,8 @@
                         </div>
                     </li>
                     <li class="photo-team">
-                        <img src="./images/img_22.jpg" alt="photo of Camila Garcia" width="264" height="260">
+                        <img srcset="./images/img_22-2x.jpeg 2x, ./images/img_22.jpg 1x" 
+                         src="./images/img_22.jpg" alt="photo of Camila Garcia" width="264" height="260">
                         <div class="team-text">
                             <h3 class="title-h">Camila Garcia</h3>
                             <p class="text">Marketing</p>
@@ -239,7 +310,8 @@
                         </div>
                     </li>
                     <li class="photo-team">
-                        <img src="./images/img_32.jpg" alt="photo of Daniel Wilson" width="264" height="260">
+                        <img srcset="./images/img_32-2x.jpeg 2x, ./images/img_32.jpg 1x" 
+                        src="./images/img_32.jpg" alt="photo of Daniel Wilson" width="264" height="260">
                         <div class="team-text">
                             <h3 class="title-h">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
@@ -279,7 +351,7 @@
             </div>
         </section>
         <section class="customers">
-            <div class="container customers-conteiner">
+            <div class="container customers-conteiner  customers-conteiner-phone">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="group-icon-customers">
                     <li class="border-icon">
@@ -365,9 +437,9 @@
             <div class="container-subscribe">
                 <p class="title-subscribe">Subscribe</p>
                 <form class="subscribe-form">
-                    <label class="foot-label">
-                        <input type="email" name="email-form" class="email-form" placeholder="E-mail" />
-                    </label>
+                    <label class="foot-label" for="email-form"> </label>
+                        <input type="email" name="email-form"  id="email-form" class="email-form" placeholder="E-mail" />
+                   
                     <button type="submit" class="button-subscribe">Subscribe
                         <svg class="icon-send" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
@@ -435,6 +507,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 
